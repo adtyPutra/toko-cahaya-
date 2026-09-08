@@ -46,7 +46,7 @@ export default function Sidebar({ isOpen }: { isOpen?: boolean }) {
     <aside className={`app-sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-header">
         <div className="sidebar-logo" style={{ borderRadius: "50%", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", background: "white", width: 44, height: 44 }}>
-          <Image src="/logo.png" alt="Logo" width={40} height={40} style={{ objectFit: "contain", borderRadius: "50%" }} />
+          <Image src="/images/logo/Logo.png" alt="Logo" width={40} height={40} style={{ objectFit: "contain", borderRadius: "50%" }} />
         </div>
         <div className="sidebar-brand">
           <h1>Toko Cahaya</h1>
