@@ -289,7 +289,7 @@ export default function LoginPage() {
           {/* KANAN — putih */}
           <div className="lp-right">
             <div className="lp-logo">
-              <Image src="/logo.png" alt="Logo Toko Cahaya" width={72} height={72} style={{ objectFit: "contain" }} />
+              <Image src="/images/logo/Logo.png" alt="Logo Toko Cahaya" width={72} height={72} style={{ objectFit: "contain" }} />
             </div>
             <h1 className="lp-title">Selamat Datang</h1>
             <p className="lp-sub">Masuk untuk melanjutkan</p>
