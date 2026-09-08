@@ -175,7 +175,7 @@ export default function DashboardPage() {
                   <XAxis dataKey="tanggal" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "#64748b" }} dy={10} />
                   <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "#64748b" }} tickFormatter={(v) => `Rp ${v.toLocaleString("id-ID")}`} dx={-10} />
                   <Tooltip 
-                    formatter={(value: number) => [formatRupiah(value), "Omzet"]}
+                    formatter={(value: any) => [formatRupiah(Number(value) || 0), "Omzet"]}
                     contentStyle={{ borderRadius: "8px", border: "none", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
                   />
                   <Line type="monotone" dataKey="omzet" stroke="#3b82f6" strokeWidth={3} dot={{ r: 4, strokeWidth: 2 }} activeDot={{ r: 6 }} />
