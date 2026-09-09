@@ -222,9 +222,9 @@ export default function RiwayatPage() {
       <div className="card no-print" style={{ padding: 0, overflow: "hidden" }}>
         {/* Filter bar */}
         <div className="toolbar" style={{ padding: "20px 24px", borderBottom: "1px solid var(--border)", background: "var(--surface)", marginBottom: 0 }}>
-          <div className="search-wrap">
+          <div className="search-wrap" style={{ flex: 1 }}>
             <MagnifyingGlassIcon style={{ width: 20, height: 20 }} />
-            <input className="form-input" style={{ paddingLeft: 42 }} placeholder="Cari no. transaksi atau kasir..." value={search} onChange={e => setSearch(e.target.value)} />
+            <input className="form-input" style={{ paddingLeft: 42, width: "100%" }} placeholder="Cari no. transaksi atau kasir..." value={search} onChange={e => setSearch(e.target.value)} />
           </div>
           <input 
             type="date" 
