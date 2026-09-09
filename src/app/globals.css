@@ -1,4 +1,4 @@
-
+﻿
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -229,6 +229,7 @@ input, select, textarea { font-family: inherit; }
 .search-wrap .form-input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.08); }
 .filter-select { border: 1.5px solid #e5e7eb; border-radius: 12px; padding: 10px 16px; font-size: 0.9rem; background: #fff; color: #374151; font-weight: 600; outline: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.04); min-width: 120px; }
 .filter-select:focus { border-color: #2563eb; }
+.date-filter { width: 180px; flex-shrink: 0; }
 .product-card {
   background: #ffffff;
   border: 1.5px solid #f0f0f0;
@@ -825,7 +826,8 @@ input, select, textarea { font-family: inherit; }
   .toolbar { flex-direction: column; align-items: stretch; }
   .search-wrap { width: 100%; }
   .filter-select { width: 100%; }
-  .date-filter { width: 100% !important; }
+  .date-filter { width: 100% !important; box-sizing: border-box; }
+  .btn-full-mobile { width: 100%; justify-content: center; }
   
   /* Flex wrap for some action bars */
   .card > div:first-child { flex-wrap: wrap; gap: 12px; }
@@ -843,3 +845,4 @@ input, select, textarea { font-family: inherit; }
   .profile-info-row { flex-direction: column; align-items: flex-start; gap: 6px; padding: 16px 0; }
   .profile-info-label { width: 100%; font-size: 0.85rem; }
 }
+

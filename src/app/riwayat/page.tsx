@@ -230,8 +230,6 @@ export default function RiwayatPage() {
             type="date" 
             className="date-filter"
             style={{ 
-              width: "180px",
-              flexShrink: 0,
               padding: "12px 16px",
               border: "1px solid var(--border)",
               borderRadius: "8px",
@@ -248,8 +246,8 @@ export default function RiwayatPage() {
           />
           {filterTgl && (
             <button 
-              className="btn btn-primary"
-              style={{ padding: "12px 16px", flexShrink: 0, whiteSpace: "nowrap" }}
+              className="btn btn-primary btn-full-mobile"
+              style={{ padding: "12px 16px", whiteSpace: "nowrap" }}
               onClick={() => setFilterTgl("")}
             >
               Reset Tanggal
