@@ -221,22 +221,22 @@ export default function RiwayatPage() {
 
       <div className="card no-print" style={{ padding: 0, overflow: "hidden" }}>
         {/* Filter bar */}
-        <div className="toolbar" style={{ padding: "20px 24px", borderBottom: "1px solid var(--border)", background: "var(--surface)", marginBottom: 0 }}>
-          <div className="search-wrap" style={{ flex: 1 }}>
-            <MagnifyingGlassIcon style={{ width: 20, height: 20 }} />
+        <div className="toolbar" style={{ padding: "20px 24px", borderBottom: "1px solid var(--border)", background: "var(--surface)", marginBottom: 0, display: "flex", alignItems: "center", gap: "12px" }}>
+          <div className="search-wrap" style={{ flex: 1, position: "relative", display: "flex", alignItems: "center" }}>
+            <MagnifyingGlassIcon style={{ width: 20, height: 20, position: "absolute", left: 12, color: "var(--text-muted)", pointerEvents: "none" }} />
             <input className="form-input" style={{ paddingLeft: 42, width: "100%" }} placeholder="Cari no. transaksi atau kasir..." value={search} onChange={e => setSearch(e.target.value)} />
           </div>
           <input 
             type="date" 
             className="form-input" 
-            style={{ color: filterTgl ? "var(--text)" : "#94a3b8", cursor: "pointer", fontFamily: "inherit" }} 
+            style={{ width: 180, flexShrink: 0, color: filterTgl ? "var(--text)" : "#94a3b8", cursor: "pointer", fontFamily: "inherit" }} 
             value={filterTgl} 
             onChange={e => setFilterTgl(e.target.value)} 
           />
           {filterTgl && (
             <button 
               className="btn btn-primary"
-              style={{ padding: "12px 16px" }}
+              style={{ padding: "12px 16px", flexShrink: 0 }}
               onClick={() => setFilterTgl("")}
             >
               Reset Tanggal
