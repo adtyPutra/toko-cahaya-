@@ -228,6 +228,7 @@ export default function RiwayatPage() {
           </div>
           <input 
             type="date" 
+            className="date-filter"
             style={{ 
               width: "180px",
               flexShrink: 0,
