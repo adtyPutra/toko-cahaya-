@@ -14,13 +14,19 @@ interface AppLayoutProps {
 export default function AppLayout({ children, title, subtitle }: AppLayoutProps) {
   const router = useRouter();
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isAuthChecking, setIsAuthChecking] = useState(true);
 
   useEffect(() => {
     const user = getUser();
     if (!user) {
       router.replace("/");
+    } else {
+      setIsAuthChecking(false);
     }
   }, [router]);
+
+  // Jangan tampilkan konten apapun sebelum auth selesai dicek
+  if (isAuthChecking) return null;
 
   return (
     <div className="app-layout">
