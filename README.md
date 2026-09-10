@@ -1,4 +1,4 @@
-﻿# Toko Cahaya — Sistem Point of Sale (POS) Warung
+# Toko Cahaya — Sistem Manajemen Toko
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.3.4-black?logo=next.js)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
@@ -10,7 +10,7 @@
 
 ## Deskripsi
 
-Toko Cahaya adalah aplikasi web Point of Sale (POS) yang dirancang untuk memudahkan pengelolaan transaksi penjualan, manajemen produk dan stok, serta pemantauan laporan keuangan warung atau toko kelontong secara real-time. Aplikasi ini mendukung dua peran pengguna: **Owner** dan **Kasir**, dengan kontrol akses yang berbeda untuk setiap peran.
+Toko Cahaya adalah aplikasi web Sistem Manajemen Toko yang dirancang untuk memudahkan pengelolaan transaksi penjualan, manajemen produk dan stok, serta pemantauan laporan keuangan toko secara real-time. Aplikasi ini mendukung dua peran pengguna: **Owner** dan **Kasir**, dengan kontrol akses yang berbeda untuk setiap peran.
 
 ---
 
