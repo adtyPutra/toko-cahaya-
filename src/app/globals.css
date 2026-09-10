@@ -304,21 +304,21 @@ input, select, textarea { font-family: inherit; }
 .calc-numpad .btn-del:hover,
 .calc-num-btn.btn-del:hover { background: #dc2626; border-color: #dc2626; }
 
-/* Clear button */
+/* Clear button — same as regular number buttons */
 .calc-numpad .btn-clear,
-.calc-num-btn.btn-clear { color: #fff; background: #f59e0b; border-color: #f59e0b; }
+.calc-num-btn.btn-clear { color: #1e293b; background: #fff; border-color: #e2e8f0; }
 .calc-numpad .btn-clear:hover,
-.calc-num-btn.btn-clear:hover { background: #d97706; border-color: #d97706; }
+.calc-num-btn.btn-clear:hover { background: #f8fafc; border-color: #cbd5e1; }
 
 /* 000 button */
 .calc-numpad .btn-000,
 .calc-num-btn.btn-000 { font-size: 1rem; }
 
-/* Uang Pas button */
+/* Uang Pas button — same as regular number buttons */
 .calc-numpad .btn-uang-pas,
-.calc-num-btn.btn-uang-pas { grid-column: span 2; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.5px; background: #eff6ff; color: #2563eb; border-color: #bfdbfe; }
+.calc-num-btn.btn-uang-pas { grid-column: span 2; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.5px; background: #fff; color: #1e293b; border-color: #e2e8f0; }
 .calc-numpad .btn-uang-pas:hover,
-.calc-num-btn.btn-uang-pas:hover { background: #dbeafe; border-color: #93c5fd; }
+.calc-num-btn.btn-uang-pas:hover { background: #f8fafc; border-color: #cbd5e1; }
 
 .calc-bayar-btn { width: 100%; padding: 16px; border-radius: 14px; border: none; background: #10b981; color: #fff; font-size: 1.1rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2); }
 .calc-bayar-btn:hover:not(.disabled) { background: #059669; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3); }
